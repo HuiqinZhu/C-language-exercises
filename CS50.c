@@ -7,6 +7,8 @@
 
 void cough(int n);
 int get_positive_int(void);
+string dayName(int dayNum);
+
 
 int main(void)
 {
@@ -35,6 +37,16 @@ if ( X>=0 && X<=10)
  {
  printf("y is not 11\n");
  } 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
  
 string name;
 name = get_string();
@@ -94,10 +106,9 @@ printf("I can count to %i\n", i);
 } 
  
 //to perform functions created below the main void 
-cough(3); 
- 
+cough(3);  
 get_positive_int();
- 
+dayName(6);
 
  // to get as many question marks as i want
 int n;
@@ -162,5 +173,31 @@ int get_positive_int(void)
 }
 
 
-
+string dayName(int dayNum) 
+{    //no need to put a "," between the type name and name
+    	String dayName = "";    //necessary to define a variable before using it in switch loop
+    	switch(dayNum) 
+     {
+    	case 1: dayName = "Monday";   // = is using the variable
+    			break;
+    	case 2: dayName = "Tuesday";     // !!!!switch(name of variable which is the main role in cases) !!!{case valueOfVariable: happening in the case; break; default: happening in the case; break; }                    
+    	  break;
+    	case 3: dayName = "Wednesday";  //switch loop is more convenient than if loop
+    	  break;
+    	case 4: dayName = "Thusday";
+	      break;
+    	case 5: dayName = "Friday";
+	      break;
+    	case 6: dayName = "Saturday";
+	      break;
+    	case 7: dayName = "Sunday";
+	      break;
+	    default: dayName = "Invalid Input";
+	    		break;                     //break;   from the beginning to the end
+	    		// break; of each case in switch loop is necessary
+    	}
+    	
+    	return dayName;   // return the final variable needed in the result in the end
+  
+    } 
  
