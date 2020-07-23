@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <cs50.h>
 
-void cough(int n)
-
+void cough(int n);
+int get_positive_int(void);
 
 int main(void)
 {
@@ -89,10 +89,36 @@ for (int i = 0; i < 100; i++)
 printf("I can count to %i\n", i);
 } 
  
- 
+//to perform functions created below the main void 
 cough(3); 
  
+get_positive_int();
  
+
+ // to get as many question marks as i want
+int n;
+ do
+ {
+ n = get_int("width: \n");
+ }
+ while(n<1);
+ for(int j=o; j <n; j++)
+ {
+  printf("?\n");
+ }
+ printf("\n");
+ 
+ //to get redundancy by using nested for loops
+ int m;
+ m = get_int("size: \n");
+ for(int ii = 0; ii < n; ii++)
+ {
+  for(int jj = 0; jj < n; jj++)
+  {
+   printf("#");
+  }
+   printf("\n");
+ }
  
  
  
@@ -111,8 +137,17 @@ printf("cough\n");
 }
 
 
-
-
+int get_positive_int(void)
+{
+ int n;
+ do
+ {
+ n = get_int("positive interger: \n");
+ }
+ while(n < 100);
+ 
+ return n;
+}
 
 
 
