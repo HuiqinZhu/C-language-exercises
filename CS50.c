@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <unistd.h>
+
+
+
 
 void cough(int n);
 int get_positive_int(void);
@@ -111,14 +115,22 @@ int n;
  //to get redundancy by using nested for loops
  int m;
  m = get_int("size: \n");
- for(int ii = 0; ii < n; ii++)
+ for(int ii = 0; ii < m; ii++)
  {
-  for(int jj = 0; jj < n; jj++)
+  for(int jj = 0; jj < m; jj++)
   {
    printf("#");
   }
    printf("\n");
  }
+ 
+ 
+ //to output numbers to the limit and pause 2 seconds
+ for(int k; ; k *= 2)
+ {
+  printf("%i", k );
+ }
+ sleep(2000);
  
  
  
