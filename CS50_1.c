@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 #include <unistd.h>
-#include <string.h>
+
 
 
 
@@ -81,7 +81,7 @@ counter++;
   
 while (true) 
  {
-printf("I am a buggy program");
+printf("I am a good program");
 }
  
 do
