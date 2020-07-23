@@ -39,14 +39,6 @@ if ( X>=0 && X<=10)
  } 
  
  
-
-
- 
- 
- 
- 
- 
- 
  
 string name;
 name = get_string();
@@ -180,7 +172,7 @@ string dayName(int dayNum)
      {
     	case 1: dayName = "Monday";   // = is using the variable
     			break;
-    	case 2: dayName = "Tuesday";     // !!!!switch(name of variable which is the main role in cases) !!!{case valueOfVariable: happening in the case; break; default: happening in the case; break; }                    
+    	case 2: dayName = "Tuesday";    //!!!{case valueOfVariable: happening in the case; break; default: happening in the case; break; }                    
     	  break;
     	case 3: dayName = "Wednesday";  //switch loop is more convenient than if loop
     	  break;
