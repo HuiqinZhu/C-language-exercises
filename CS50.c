@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 #include <unistd.h>
-
+#include <string.h>
 
 
 
@@ -135,8 +135,12 @@ int n;
  }
  sleep(2000);
  
- 
- 
+
+	
+	
+	
+	
+	
  
  
 } 
